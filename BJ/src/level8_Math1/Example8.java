@@ -17,20 +17,10 @@ public class Example8 {
 		int move = 0;
 		int cnt = 0;
 		
-		while(distance >= 0) {
-			if(move == 0) {
-				move++;
-				distance -= move;
-				cnt++;
-			}
-			else {
-				if()
-			}
 		
-						
 			
 			
-		}
+		
 	}
 
 }
