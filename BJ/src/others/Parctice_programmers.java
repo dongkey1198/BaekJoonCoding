@@ -9,16 +9,25 @@ public class Parctice_programmers {
 	public String solution(String[] participant, String[] completion) {
 		
 		String answer = "";
+		String tmp = "";
 		
-		List <String> list = Arrays.asList(participant);
-		Collections.sort(list);
+		Arrays.sort(participant);
 		Arrays.sort(completion);
-		for(int i = 0; i<completion.length; i++) {
-			if(list.contains(completion[i])) {
-				list.remove(i);
+		
+		for(int i = 0 ; i < participant.length; i++) {
+				if(!participant[i].equals(completion[i])) {
+					tmp = participant[i];
+					break;
 			}
 		}
-		answer = list.get(0);
+		if(tmp != "") {
+			answer = tmp;
+		}
+		else {
+			answer = participant[participant.length - 1];
+		}
+		
+		
 		
 		return answer;
 	}
