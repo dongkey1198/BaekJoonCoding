@@ -1,25 +1,37 @@
 package level8_Math1;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+
+
+import java.util.Scanner;
 
 public class Example8 {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		Scanner sc = new Scanner(System.in);
 		
-		int sPoint = Integer.parseInt(br.readLine());
-		int destination = Integer.parseInt(br.readLine());
-		int distance = destination - sPoint;
+		int T = sc.nextInt();
 		
-		int move = 0;
-		int cnt = 0;
-		
-		
+		for(int i =0; i<T; i++) {
 			
+			int start = sc.nextInt();
+			int dest = sc.nextInt();
 			
+			//거리
+			int distance = dest - start;
+			int max_move = (int)Math.sqrt(distance);
+			
+			if(max_move == Math.sqrt(distance)) {
+				System.out.println((max_move*2) - 1);
+			}
+			else if(distance <= (max_move*max_move) + max_move) {
+				System.out.println(max_move * 2);
+			}
+			else {
+				System.out.println((max_move*2) + 1);
+			}
+			
+		}
 		
 	}
 
