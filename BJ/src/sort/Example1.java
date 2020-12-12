@@ -17,14 +17,14 @@ public class Example1 {
 			arr[i] = sc.nextInt();
 		}
 	
-		selectionSort(arr);
+		selectionSort(arr);//오름차순 정렬
 		
 		for(int a : arr) {
 			System.out.print(a + " ");
 		}
 		System.out.println();
 		
-		selectionSort2(arr);
+		selectionSort2(arr); //내림차순 정렬
 		
 		for(int a : arr) {
 			System.out.print(a + " ");
