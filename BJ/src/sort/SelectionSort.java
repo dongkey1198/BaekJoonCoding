@@ -2,7 +2,7 @@ package sort;
 
 import java.util.Scanner;
 
-public class Example1 {
+public class SelectionSort {
 	
 	static int[] arr;
 	
