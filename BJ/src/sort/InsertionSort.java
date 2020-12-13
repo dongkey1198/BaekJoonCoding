@@ -31,7 +31,7 @@ public class InsertionSort {
 				if(arr[j-1]> arr[j]) {
 					tmp = arr[j-1];
 					arr[j-1] = arr[j];
-					arr[j] = tmp;
+					arr[j] = tmp;//
 				}
 			}
 		}
