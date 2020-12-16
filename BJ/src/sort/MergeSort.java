@@ -7,7 +7,7 @@ public class MergeSort {
 
 	public static void main(String[] args) {
 		
-		arr = new int[]{1, 4, 8, 6, 9, 7, 3, 5, 2};
+		arr = new int[]{1, 4, 6, 3, 5, 2};
 		tmp = new int[arr.length];
 		
 		//첫 번째 index와 마지막 index 넘버를 매개변수로 보낸다.
@@ -19,10 +19,9 @@ public class MergeSort {
 		
 		if(start < end) {
 			int mid = (start+end) / 2;
-			// 첫번째 부터 중간까지
+			
 			mergeSort(start, mid);
-			//중간 다음부터 마지막까지
-			mergeSort(mid+1, end);
+			mergeSort(mid+1, end);//
 			
 			int p = start;
 			int q = mid + 1;
@@ -35,15 +34,17 @@ public class MergeSort {
 				else {
 					tmp[idx++] = arr[q++];
 				}
+				for(int a: tmp) {
+					System.out.print(a + " ");
+				}
+				System.out.println();
+								
 			}
 			
 			for(int i = start; i <= end; i++) {
 				arr[i] = tmp[i];
 			}
-			for(int a : tmp) {
-				System.out.print(a + " ");
-			}
-			System.out.println();
+			
 		}
 	}
 	
