@@ -2,7 +2,7 @@
 public class Programmers_Stringbasic {
 	public static boolean solution(String s) {
 		boolean answer = true;
-		s.
+		
 		for(int i = 0; i< s.length(); i++) {
 			
 			char c = s.charAt(i);
