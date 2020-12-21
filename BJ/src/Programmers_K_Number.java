@@ -26,7 +26,7 @@ public class Programmers_K_Number {
 		
 	}
 	
-	public static void main(String[] args) {
+	public static void main(StringExample[] args) {
 		// TODO Auto-generated method stub
 		int[] array = {1, 5, 2, 6, 3, 7, 4};
 		int[][] commands = {{2, 5, 3}, {4, 4, 1}, {1, 7, 3}};

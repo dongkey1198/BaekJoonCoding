@@ -3,9 +3,11 @@ import java.util.Collections;
 
 public class Programmers_string_reverse {
 
-	public static void main(String[] args) {
+	public static void main(int[] args) {
 		String s ="abcdZef";
-		String ss ="";
+		int n = s.length();
+		int[] answer = new int[n]; 
+		String ss = "";
 		
 		Character[]a = new Character[s.length()];
 		
