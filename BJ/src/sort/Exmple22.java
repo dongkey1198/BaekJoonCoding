@@ -60,7 +60,7 @@ public class Exmple22 {
 			
 		}
 		System.out.println((int)Math.round((double)sum / N));	// 산술평균 
-		System.out.println(median);	// 중앙값 
+		System.out.println(median);	// 중앙값 a
 		System.out.println(mode);	// 최빈값 
 		System.out.println(max - min);	// 범위 a
 		
